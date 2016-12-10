@@ -1,0 +1,73 @@
+/*
+ * - HELPERS
+ * - Classes to help you with little stuffs :)
+ *
+ *
+ * 1. REM size base
+ * 2. Sticky footer
+ * 3. Containers
+ * 4. Clearfix
+ * 5. Img Responsive
+ * 6. Divider
+ * ========================================================================== */
+
+
+
+/*
+ * 1 - REM size base
+ * -------------------------------------------------- */
+html
+  font-size 10px
+  +below(xs)
+    font-size 8px
+
+
+/*
+ * 2 - Sticky footer
+ * -------------------------------------------------- */
+body
+  display flex
+  flex-direction column
+
+  main
+    min-height calc(100vh - 90px)
+
+
+/*
+ * 3 - Containers
+ * -------------------------------------------------- */
+.container
+  lost-center 965px
+  +below(sm)
+    width 90%
+  +between(sm, md)
+    width 95%
+  +above(lg)
+    width 100%
+
+  &.container-flex
+    lost-flex-container row
+
+
+/*
+ * 4 - Clearfix
+ * -------------------------------------------------- */
+.clearfix
+  lost-utility clearfix
+
+
+/*
+ * 5 - Img Responsive
+ * -------------------------------------------------- */
+.responsive-img
+  width 100%
+
+
+/*
+ * 6 - Divider
+ * -------------------------------------------------- */
+.divider
+  width 100%
+  height 1px
+  background-color $border-color
+  margin 3rem 0

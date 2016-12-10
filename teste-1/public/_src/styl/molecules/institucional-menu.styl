@@ -1,0 +1,22 @@
+.institucional-menu
+  display flex
+  justify-content space-between
+  width 100%
+  margin-bottom 3rem
+  +below(xs)
+    flex-direction column
+    align-items center
+
+  &__left, &__right
+    list-style none
+    display flex
+    +below(xs)
+      display block
+      margin-bottom 2rem
+
+    .link__semibold
+      text-decoration none
+      &:not(:nth-last-child(-n+1))
+        margin-right 2rem
+        padding-right 2rem
+        border-right 1px solid $border-color

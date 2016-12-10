@@ -1,0 +1,45 @@
+.warning-boxes
+  margin-top 4rem
+  lost-flex-container row
+
+  /*
+   * Item
+   * -------------------------------- */
+  &__item
+    lost-column 1/3
+    flex-direction column
+    text-align center
+    padding 1.6rem
+    border 1px solid $orange
+
+    // Tablet and Desktop
+    +above(xs)
+      lost-column 1/3
+    // Mobile
+    +below(xs)
+      lost-column 1/1
+      & + &
+        margin-top 3rem
+
+  /*
+   * Icon
+   * -------------------------------- */
+  &__icon
+    width 5rem
+    height 5rem
+    background-color #fff
+    fill $deeppink
+    border-radius 50%
+    margin-bottom 1.6rem
+
+    &.icon--white
+      fill #fff
+      background $deeppink
+      border 2px solid $deeppink
+
+  /*
+   * Description
+   * -------------------------------- */
+  &__description
+    font(text, primary, light)
+    color $text-color

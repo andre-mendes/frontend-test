@@ -1,0 +1,42 @@
+
+/*
+ * Banners container
+ * ---------------------------------- */
+.banners-top
+  lost-flex-container row
+  margin 4rem 0
+
+  /*
+   * Slider
+   * ---------------------------------- */
+  .banner__large
+    // Tablet and Desktop
+    +above(xs)
+      lost-column 3/4
+    // Mobile
+    +below(xs)
+      lost-column 1/1
+
+
+  /*
+   * Banner Small
+   * ---------------------------------- */
+  .banner__small
+    border 3px solid $deeppink
+    box-sizing border-box
+    height 250px
+    overflow hidden
+
+    // Tablet and Desktop
+    +above(xs)
+      lost-column 1/4
+    // Mobile
+    +below(xs)
+      lost-column 1/1
+      margin 4rem auto
+
+    // Inner img
+    img
+      width 100%
+      height 100%
+      object-fit fill

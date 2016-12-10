@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Teste</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<!-- SVG Icons -->
+<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+
+    <!-- Arrow Icon -->
+    <symbol id="svg-arrow" viewBox="0 0 16 16">
+      <title>Seta</title>
+      <path d="M11.479,8.054l0.008,0.009l-0.694,0.667l-0.731,0.721l-0.009-0.008l-4,3.846l-1.414-1.392l3.982-3.83
+        L4.513,4.115l1.426-1.404l4.125,3.968l0.008-0.008l0.714,0.703l0.7,0.674L11.479,8.054z"/>
+    </symbol>
+
+    <!-- Error Icon -->
+    <symbol id="svg-error" viewBox="0 0 17.998 18.008" style="enable-background:new 0 0 17.998 18.008;">
+      <title>Erro</title>
+      <path d="M8.999,0C4.029,0,0,4.031,0,9.004s4.029,9.004,8.999,9.004c4.97,0,8.999-4.031,8.999-9.004
+        S13.969,0,8.999,0z M13.237,11.826l-1.413,1.414l-2.829-2.829L6.167,13.24l-1.414-1.414l2.829-2.829L4.753,6.169l1.414-1.415
+        l2.829,2.829l2.829-2.829l1.414,1.415L10.41,8.997L13.237,11.826z"/>
+    </symbol>
+
+    <!-- Success Icon -->
+    <symbol id="svg-success" viewBox="0 0 17.998 18.008" style="enable-background:new 0 0 17.998 18.008;">
+      <title>Sucesso</title>
+      <path d="M8.999,0C4.029,0,0,4.031,0,9.004c0,4.973,4.029,9.004,8.999,9.004c4.97,0,8.999-4.031,8.999-9.004
+        C17.998,4.031,13.969,0,8.999,0z M14.498,6.417l-6.17,6.044c-0.031,0.051-0.069,0.104-0.12,0.156l-0.289,0.289
+        c-0.16,0.16-0.348,0.23-0.42,0.159L4.561,9.989C4.489,9.917,4.56,9.729,4.72,9.568l0.289-0.289c0.16-0.16,0.348-0.231,0.42-0.159
+        l2.203,2.306l5.999-5.877c0.16-0.16,0.419-0.16,0.579,0l0.29,0.29C14.658,5.999,14.658,6.257,14.498,6.417z"/>
+    </symbol>
+
+    <!-- Edit Icon -->
+    <symbol id="svg-edit" viewBox="0 0 15.896 16.521">
+      <title>Editar</title>
+      <path d="M9.93,0L5.994,3.937L1.836,8.095l1.965,1.965l3.941-3.926l0.01-0.016l0.212-0.211l0.01-0.004l3.923-3.938
+        L9.93,0z M0.019,11.506l2.079-0.375L0.394,9.426L0.019,11.506z"/>
+    </symbol>
+
+    <!-- Pencil Icon  -->
+    <symbol id="svg-pencil" viewBox="0 0 300 300">
+      <title>Editar</title>
+      <path d="M149.996,0C67.157,0,0.001,67.161,0.001,149.997S67.157,300,149.996,300s150.003-67.163,150.003-150.003
+        S232.835,0,149.996,0z M221.302,107.945l-14.247,14.247l-29.001-28.999l-11.002,11.002l29.001,29.001l-71.132,71.126
+        l-28.999-28.996L84.92,186.328l28.999,28.999l-7.088,7.088l-0.135-0.135c-0.786,1.294-2.064,2.238-3.582,2.575l-27.043,6.03
+        c-0.405,0.091-0.817,0.135-1.224,0.135c-1.476,0-2.91-0.581-3.973-1.647c-1.364-1.359-1.932-3.322-1.512-5.203l6.027-27.035
+        c0.34-1.517,1.286-2.798,2.578-3.582l-0.137-0.137L192.3,78.941c1.678-1.675,4.404-1.675,6.082,0.005l22.922,22.917
+        C222.982,103.541,222.982,106.267,221.302,107.945z"/>
+    </symbol>
+  </defs>
+</svg>
+
+
+<!-- Main header -->
+<header class="main-header" role="banner">
+  <div class="main-header__content">
+    <img src="img/svg/logo.svg" alt="Logo" role="logo" class="main-logo">
+
+    <nav class="navbar">
+      <a href="#!" class="navbar__link" title="Home">
+        Home
+      </a>
+      <a href="#!" class="navbar__link" title="Dolor">
+        Dolor
+      </a>
+      <a href="#!" class="navbar__link" title="Consectetur">
+        Consectetur
+      </a>
+    </nav>
+
+    <a href="#!" class="btn__primary" title="Ver Interdum">
+      Interdum
+      <svg class="btn__icon" aria-hiden="true">
+        <use xlink:href="#svg-arrow"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+
+<!-- Main content -->
+<main class="main-content">
+
+  <!-- Bradcrumb -->
+  <div class="breadcrumb">
+    <a href="#!" class="breadcrumb__link" title="Ir para Home">
+      Home
+      <svg class="breadcrumb__icon" aria-hiden="true">
+        <use xlink:href="#svg-arrow"></use>
+      </svg>
+    </a>
+    <a href="#!" class="breadcrumb__link" title="Ir para Ultrices">
+      Ultrices
+      <svg class="breadcrumb__icon" aria-hiden="true">
+        <use xlink:href="#svg-arrow"></use>
+      </svg>
+    </a>
+    <span class="breadcrumb__link">
+      Érat egestas
+    </span>
+  </div>
+
+
+  <!-- Top banners -->
+  <section class="banners-top">
+
+    <div class="banner__large">
+      <!-- Slider -->
+      <div id="banner" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#banner" data-slide-to="0" class="active"></li>
+          <li data-target="#banner" data-slide-to="1"></li>
+          <li data-target="#banner" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="first-slide" src="img/city.jpg" alt="First slide">
+          </div>
+          <div class="item">
+            <img class="second-slide" src="img/city.jpg" alt="Second slide">
+          </div>
+          <div class="item">
+            <img class="third-slide" src="img/city.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Small Banner -->
+    <figure class="banner__small">
+      <img src="img/nature.jpg" alt="Nature">
+    </figure>
+  </section> <!-- ./ banners-top -->
+
+  <div class="container">
+    <!-- Aside navgation -->
+    <aside class="aside-navigation">
+      <div class="aside-navigation--block">
+        <h3 class="aside-navigation__title">
+          Áestigulum
+        </h3>
+
+        <ul class="aside-navigation__list">
+          <p class="aside-navigation__subtitle">
+            Vestibulum
+          </p>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Vestibulum Vestibulum
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Áestibuçum
+            </a>
+          </li>
+        </ul>
+
+        <ul class="aside-navigation__list">
+          <p class="aside-navigation__subtitle">
+            Vestibulum
+          </p>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Vestibulum Vestibulum
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Áestibuçum
+            </a>
+          </li>
+        </ul>
+
+        <ul class="aside-navigation__list">
+          <p class="aside-navigation__subtitle">
+            Vestibulum
+          </p>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Vestibulum Vestibulum
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Áestibuçum
+            </a>
+          </li>
+        </ul>
+
+        <ul class="aside-navigation__list">
+          <p class="aside-navigation__subtitle">
+            Vestibulum
+          </p>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Vestibulum Vestibulum
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Áestibuçum Vestibulum
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Vestibulum Vestibulum
+            </a>
+          </li>
+        </ul>
+
+        <ul class="aside-navigation__list">
+          <p class="aside-navigation__subtitle">
+            Vestibulum
+          </p>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Vestibulum
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Áestibuçum Vestibulum
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="aside-navigation__link" title="Ver página lorem">
+              Vestibulum
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </aside> <!-- ./ aside-navigation -->
+
+
+    <!-- Main container -->
+    <section class="main-container">
+      <article class="text-content">
+        <p class="section__title">
+          Étiam enim massa
+        </p>
+        <p class="flow-text">
+          Maecenas ut ante posuere, ultrices diam ut, tempus mauris. Nam tincidunt
+           nisl dui, id porta dui ornare vel. Phasellus ac lectus eu metus
+           accumsan elementum fringilla sed felis. Praesent a eros neque.
+        </p>
+        <p class="flow-text">
+          Nam dui lacus, blandit sit amet aliquam at, lobortis ut mauris.
+          Pellentesque scelerisque velit eu varius ultrices. Curabitur viverra,
+          erat sit amet auctor suscipit, massa lectus dictum erat, imperdiet
+          lobortis mauris diam nec lacus. Proin lacinia eros eget congue lacinia.
+        </p>
+      </article>
+
+      <!-- Cat banner -->
+      <figure class="banner__cat">
+        <figcaption class="section__title">
+          Suspendisse et
+        </figcaption>
+        <img src="img/cats.jpg" alt="Foto de gatos" class="responsive-img">
+      </figure>
+
+      <!-- Bread banner -->
+      <figure class="banner__bread">
+        <img src="img/food.jpg" alt="Foto de pães" class="responsive-img">
+        <figcaption class="banner__bread--description">
+          Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.
+        </figcaption>
+      </figure>
+
+
+      <!-- Warning boxes -->
+      <div class="warning-boxes">
+
+        <div class="warning-boxes__item">
+          <svg class="warning-boxes__icon" aria-hiden="true">
+            <use xlink:href="#svg-success"></use>
+          </svg>
+          <p class="warning-boxes__description">
+            Ùonec laoreet sem id vehicula vehicula.
+          </p>
+        </div>
+
+        <div class="warning-boxes__item">
+          <svg class="warning-boxes__icon" aria-hiden="true">
+            <use xlink:href="#svg-error"></use>
+          </svg>
+          <p class="warning-boxes__description">
+            Mauris non congue justo, ut convallis purus. Vestibulum ligula.
+          </p>
+        </div>
+
+        <div class="warning-boxes__item">
+          <svg class="warning-boxes__icon icon--white" aria-hiden="true">
+            <use xlink:href="#svg-pencil"></use>
+          </svg>
+          <p class="warning-boxes__description">
+            Morbi augue tellus, viverra vestibulum felis et, eleifend consectetur
+            ipsum felis et, eleifend.
+          </p>
+        </div>
+      </div>
+    </section> <!-- ./ main-content -->
+  </div>
+
+</main>
+
+<!-- Main footer -->
+<footer class="main-footer" role="contentinfo">
+  <div class="container container-flex">
+
+    <!-- Menu 1 and 2 -->
+    <div class="footer footer__menus">
+      <h3 class="footer__title">
+        Áuctor commod
+      </h3>
+      <div class="list">
+        <h4 class="list__title">
+          Links Úteis
+        </h4>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#!" class="list__item">Alorem Item 1</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Item 2</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Lorem 3</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Item 4</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Domus Item 5</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Item 6</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Domuçs 7</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Item 8</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Lorem Item 9</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <h4 class="list__title">
+          Links Úteis
+        </h4>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#!" class="list__item">Alorem Item 1</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Item 2</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Lorem 3</a>
+          </li>
+          <li>
+            <a href="#!" class="list__item">Item 4</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Link geral -->
+      <div class="link__geral--container">
+        <a href="#!" class="link__geral" title="Ver todos">
+          All things
+          <svg class="link__icon" aria-hiden="true">
+            <use xlink:href="#svg-arrow"></use>
+          </svg>
+        </a href="#!" title="Ver todos">
+        <a href="#!" class="link__geral" title="Ver todos">
+          All things
+          <svg class="link__icon" aria-hiden="true">
+            <use xlink:href="#svg-arrow"></use>
+          </svg>
+        </a href="#!" title="Ver todos">
+      </div>
+    </div>
+
+    <!-- Menu Logos -->
+    <div class="footer__logos">
+      <h3 class="footer__title">
+        Pellentesque
+      </h3>
+      <div class="footer__logos--container">
+        <a href="#!" target="_blank" title="Ir para logo 01" class="footer__logos--item">
+          <img src="img/logos/logo-01.png" alt="Logo 01">
+        </a>
+        <a href="#!" target="_blank" title="Ir para logo 02" class="footer__logos--item">
+          <img src="img/logos/logo-02.png" alt="Logo 02">
+        </a>
+        <a href="#!" target="_blank" title="Ir para logo 03" class="footer__logos--item">
+          <img src="img/logos/logo-03.png" alt="Logo 03">
+        </a>
+        <a href="#!" target="_blank" title="Ir para logo 04" class="footer__logos--item">
+          <img src="img/logos/logo-04.png" alt="Logo 04">
+        </a>
+        <a href="#!" target="_blank" title="Ir para logo 05" class="footer__logos--item">
+          <img src="img/logos/logo-05.png" alt="Logo 05">
+        </a>
+        <a href="#!" target="_blank" title="Ir para logo 06" class="footer__logos--item">
+          <img src="img/logos/logo-06.png" alt="Logo 06">
+        </a>
+      </div>
+    </div>
+
+  </div> <!-- ./ flex-container -->
+
+  <div class="container">
+    <!-- Divider -->
+    <div class="divider clearfix"></div>
+
+    <!-- institucional menu -->
+    <div class="institucional-menu">
+      <div class="institucional-menu__left">
+        <a href="#!" class="link__semibold">Lorem</a>
+        <a href="#!" class="link__semibold">Ipsum</a>
+        <a href="#!" class="link__semibold">Dolor</a>
+      </div>
+
+      <div class="institucional-menu__right">
+        <a href="#!" class="link__semibold">Consectetur</a>
+        <a href="#!" class="link__semibold">Tempus</a>
+        <a href="#!" class="link__semibold">mauris</a>
+        <a href="#!" class="link__semibold">Phasellus</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p class="copyright__text">
+      9999©Ut urna ligula, pretium ut elit dapibus, ornare tempus leo.
+      Suspendisse augue massa Donec in maximus metus. suspendisse volutpat ornare
+      congue.
+    </p>
+  </div>
+</footer>
+
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

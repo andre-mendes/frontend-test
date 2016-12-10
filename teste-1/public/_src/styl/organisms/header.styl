@@ -1,0 +1,30 @@
+.main-header
+  background-color $header-color
+  border-bottom 1px solid $border-color
+  padding 10px 0
+  height 45px
+
+  // Mobile
+  +below(xs)
+    height 120px
+
+  /*
+   * Header container
+   * ---------------------------------- */
+  &__content
+    lost-center 965px
+    align-items center
+    height 100%
+    position relative
+
+  /*
+   * If has a button
+   * ---------------------------------- */
+  [class^='btn']
+    // Tablet and Desktop
+    +above(xs)
+      margin-left auto
+
+    // Mobile
+    +below(xs)
+      margin 0 auto

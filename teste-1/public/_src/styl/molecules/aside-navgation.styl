@@ -1,0 +1,65 @@
+.aside-navigation
+  // Tablet and Desktop
+  +above(xs)
+    lost-column 1/4
+  // Mobile
+  +below(xs)
+    lost-column 1/1
+
+  &--block
+    border 1px solid $border-color
+    box-sizing border-box
+    padding 1.6rem 1rem 1rem
+
+  /*
+   * Aside Title
+   * ---------------------------------- */
+  &__title
+    font(text, primary, regular)
+    color $orange
+    padding-bottom 1rem
+    border-bottom 1px solid $border-color
+
+  /*
+   * Menu List
+   * ---------------------------------- */
+  &__list
+    margin-top 2rem
+    list-style none
+
+  /*
+   * Menu Subtitles
+   * ---------------------------------- */
+  &__subtitle
+    font(text-medium, primary, bold)
+    color $skyblue
+    margin-bottom .5rem
+    padding-left 1.5rem
+    position relative
+
+    /*
+     * Menu Subtitles Arrow Icon
+     * ---------------------------------- */
+    &:before
+      content ''
+      display block
+      border-left 9px solid $orange
+      border-top 4px solid transparent
+      border-bottom 4px solid transparent
+      position absolute
+      left 0
+      top 50%
+      transform translate3d(0, -50%, 0)
+
+  /*
+   * Menu Links
+   * ---------------------------------- */
+  &__link
+    font(text-medium, primary, regular)
+    display block
+    padding .5rem 0
+    text-decoration none
+    color $text-color
+    transition color .2s
+    &:hover
+      color $skyblue

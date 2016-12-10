@@ -1,0 +1,49 @@
+/*
+ * Section titles
+ * -------------------------------------------------- */
+.section__title
+  font(text-large, primary, light)
+  color $deeppink
+  padding-bottom 2rem
+  margin-bottom 2rem
+  margin-top .5rem
+  border-bottom 1px solid $border-color
+
+/*
+ * Flow text
+ * -------------------------------------------------- */
+.flow-text
+  font(text, primary, regular)
+  color $text-color
+
+  & + &
+    margin-top 2rem
+
+
+/*
+ * Links
+ * -------------------------------------------------- */
+.link
+
+  // Geral
+  &__geral
+    font(text-small, primary, bold)
+    text-decoration underline
+    color $text-color
+
+  // Semi bold
+  &__semibold
+    font(text-small, primary, semi-bold)
+    text-decoration nonde
+    color $text-color
+    &:hover
+      text-decoration underline
+
+/*
+ * Icon link
+ * -------------------------------------------------- */
+.link__icon
+  fill $text-color
+  height 1.5rem
+  width 1.5rem
+  vertical-align middle
